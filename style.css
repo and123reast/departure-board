@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header {
+    background-color: #f4b400; /* kuning */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    height: 70px;
+    margin-right: auto;
+  }
+
+  .agent-logo {
+    height: 50px;
+    margin-right: auto;
+    object-fit: contain;
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+  
+  .time-box {
+    width: 200px;
+    height: 60px;
+    background-color: #fdeaa8;
+    border: 3px solid #a66f00;
+    border-radius: 10px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .right-header {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+  }
+  
+  #current-date {
+    font-size: 3.5rem;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0;
+  }
+
+  #current-time {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: #000;
+    color: white;
+    font-weight: regular;
+    font-size: 1.5rem;
+    letter-spacing: 1px; 
+  }
+  
+  th, td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    letter-spacing: 0.3px;
+  }
+
+  td:nth-child(2) {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  td:nth-child(3) {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+td:nth-child(4) {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+td:nth-child(5) {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+  tbody {
+    background-color: white;
+  }
+
+  .status {
+    color:black;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  .scheduled {
+    background-color: grey;
+  }
+
+  .delayed {
+    background-color: orange;
+  }
+
+  .cancelled {
+    background-color: red;
+  }
+
+  .marquee-container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 30s linear infinite;
+    font-size: 1.2rem;
+    padding-left: 100%;
+  }
+  
+  @keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
