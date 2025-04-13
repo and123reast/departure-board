@@ -128,6 +128,28 @@ td:nth-child(5) {
     background-color: red;
   }
 
+  .departed {
+    background-color: green;
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 1; /* Teks terlihat */
+    }
+    50% {
+      opacity: 0; /* Teks tidak terlihat */
+    }
+    100% {
+      opacity: 1; /* Teks kembali terlihat */
+    }
+  }
+
+  
+  .gate-open {
+    background-color: red;
+    animation: blink 1s infinite; 
+  }
+
   .marquee-container {
     position: fixed;
     bottom: 0;
