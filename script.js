@@ -1,5 +1,5 @@
 const departures = [
-    { time: "01:17", vessel: "Dolphin 2", destination: "Stulang Laut", status: "Scheduled" },
+    { time: "01:18", vessel: "Dolphin 2", destination: "Stulang Laut", status: "Scheduled" },
     { time: "06:45", vessel: "Dolphin 2", destination: "Stulang Laut", status: "Scheduled" },
     { time: "13:30", vessel: "Dolphin 5", destination: "Stulang Laut", status: "Scheduled" },
     { time: "16:45", vessel: "Dolphin 2", destination: "Stulang Laut", status: "Scheduled" }
